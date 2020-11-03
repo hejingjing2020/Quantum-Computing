@@ -1,12 +1,12 @@
-## Welcome to GitHub Pages
+## Quantum Computing
 
 You can use the [editor on GitHub](https://github.com/hejingjing2020/csc3185Group6Web.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### What is Quantum COmputing?
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Quantum computing is essentially harnessing and exploiting the amazing laws of quantum mechanics to process information. A traditional computer uses long strings of “bits,” which encode either a zero or a one. A quantum computer, on the other hand, uses quantum bits, or qubits. What's the difference? Well a qubit is a quantum system that encodes the zero and the one into two distinguishable quantum states. But, because qubits behave quantumly, we can capitalize on the phenomena of "superposition" and "entanglement."
 
 ```markdown
 Syntax highlighted code block
@@ -26,12 +26,12 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+For more details see [Quantum Computing](https://en.wikipedia.org/wiki/Quantum_computing).
 
-### Jekyll Themes
+### Quantum bits
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/hejingjing2020/csc3185Group6Web.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Quantum bits (or “qubits”) are made of subatomic particles, namely individual photons or electrons. Because these subatomic particles conform more to the rules of quantum mechanics than classical mechanics, they exhibit the bizarre properties of quantum particles. The most salient of these properties for computer scientists is superposition. This is the idea that a particle can exist in multiple states simultaneously, at least until that state is measured and collapses into a single state. By harnessing this superposition property, computer scientists can make qubits encode a 1 and a 0 at the same time.
 
-### Support or Contact
+### Quantum Entanglemen
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+The other quantum mechanical quirk that makes quantum computers tick is entanglement, a linking of two quantum particles or, in this case, two qubits. When the two particles are entangled, the change in state of one particle will alter the state of its partner in a predictable way, which comes in handy when it comes time to get a quantum computer to calculate the answer to the problem you feed it.
