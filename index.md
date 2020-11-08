@@ -44,12 +44,11 @@ John Preskill has introduced the term quantum supremacy to refer to the hypothet
 
 ### Research
 
-[![BoIbRS.jpg](https://s1.ax1x.com/2020/11/08/BoIbRS.jpg)](https://imgchr.com/i/BoIbRS)
-
 <video id="video" controls="" preload="none" poster="http://media.w3.org/2010/05/sintel/poster.png"> 
     <source id="mp4" src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4"> 
     <source id="webm" src="http://media.w3.org/2010/05/sintel/trailer.webm" type="video/webm"> 
     <source id="ogv" src="http://media.w3.org/2010/05/sintel/trailer.ogv" type="video/ogg"> 
     <p>Your user agent does not support the HTML5 Video element.</p>
 </video>
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=WVv5OAR4Nik" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=WVv5OAR4Nik" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
