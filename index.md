@@ -45,10 +45,6 @@ The Quantum algorithm for linear systems of equations, or "HHL Algorithm", named
 John Preskill has introduced the term quantum supremacy to refer to the hypothetical speedup advantage that a quantum computer would have over a classical computer in a certain field. Google announced in 2017 that it expected to achieve quantum supremacy by the end of the year though that did not happen. IBM said in 2018 that the best classical computers will be beaten on some practical task within about five years and views the quantum supremacy test only as a potential future benchmark. Although skeptics like Gil Kalai doubt that quantum supremacy will ever be achieved, in October 2019, a Sycamore processor created in conjunction with Google AI Quantum was reported to have achieved quantum supremacy, with calculations more than 3,000,000 times as fast as those of Summit, generally considered the world's fastest computer. Bill Unruh doubted the practicality of quantum computers in a paper published back in 1994. Paul Davies argued that a 400-qubit computer would even come into conflict with the cosmological information bound implied by the holographic principle.
 
 ### Research
-<!--
-     Video
--->
-
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WVv5OAR4Nik" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
