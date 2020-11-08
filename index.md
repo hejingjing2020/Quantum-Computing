@@ -4,6 +4,8 @@
 Quantum computing is the use of quantum phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers. Quantum computers are believed to be able to solve certain computational problems, such as integer factorization (which underlies RSA encryption), substantially faster than classical computers. The study of quantum computing is a subfield of quantum information science.
 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WVv5OAR4Nik" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 ### Quantum bits
 
 Quantum bits (or “qubits”) are made of subatomic particles, namely individual photons or electrons. Because these subatomic particles conform more to the rules of quantum mechanics than classical mechanics, they exhibit the bizarre properties of quantum particles. The most salient of these properties for computer scientists is superposition. This is the idea that a particle can exist in multiple states simultaneously, at least until that state is measured and collapses into a single state. By harnessing this superposition property, computer scientists can make qubits encode a 1 and a 0 at the same time.
@@ -43,5 +45,4 @@ John Preskill has introduced the term quantum supremacy to refer to the hypothet
 
 ### Research
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WVv5OAR4Nik" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
