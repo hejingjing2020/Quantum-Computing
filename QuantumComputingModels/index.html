@@ -2,8 +2,13 @@
 <html lang="en" dir="ltr"><!--english, left to right-->
 <head>
 <title>Quantum Computing Models</title>
+<script type="text/javascript" 
+        src="http://common.cnblogs.com/script/ASCIIMathML.js">
+</script>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="../styles/layout.css" type="../text/css">
+  
+<link rel="stylesheet" href="styles/layout.css" type="text/css">
+  
 <!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
 </head>
 <body>
@@ -24,11 +29,14 @@
   <div id="container" class="clear">
     <!-- Slider -->
     <section id="slider" class="clear">
-      <figure><img src="/images/demo/630x300.gif" alt="">
+      <figure><img src="images/demo/630x300.gif" alt="">
         <figcaption>
-          <h2>AAAAAAAAAAAAAAAAAAAA</h2>
-          <p>new paragraph BBBBBBBBBBBBBBBBBBB finish paragraph</p>
-            <p>A new paragraph</p>
+          <p>In classical information theory, the concept of the universal computer can be represented by several equivalent models, corresponding to different scientific 
+            approaches. From a mathematical point of view, a universal computer is a machine capable of calculating <I>partial recursive functions</I>, computer 
+            scientists often use the <I>Turing machine</I> as their favorite model, an electro-engineer would possibly speak of <I>logic circuits</I> while a programmer 
+            certainly will prefer a <I>universal programming language</I>.</p>
+          <p>As for quantum computation, each of these classical concepts has a quantum counterpart:</p>
+
           <footer class="more"><a href="#">You can add hyperlink here&raquo;</a></footer>
         </figcaption>
       </figure>
@@ -38,18 +46,77 @@
       <section class="clear">
         <!-- article 1 -->
         <article class="two_quarter">
-          <h2>====Title=====</h2>
-          <p>A new paragraph.</p>
-          <p>A new paragraph.</p>
+          <h2>Unitary Operators</h2>
+          <p>The paradigm of computation as a physical process requires that QC can -- in principle -- be described by the same means as any other physical reality, 
+            which, for the field of quantum physics, is the mathematical formalism of Hilbert space operator algebra.</p>
+          <p>The moral equivalent in QC to partial recursive functions, the mathematical concept of classical computability, are unitary operators. As every 
+            classically computable problem can be reformulated as calculating the value of a partial recursive function, each quantum computation must have 
+            a corresponding unitary operator.</p>
+          <p>The mathematical description of an operator is inherently declarative; the actual implementation for a certain quantum architecture i.e. the algorithmic 
+            decomposition into elementary operations, is beyond the scope of this formalism. Also, since the mathematical model treats unitary operators as black boxes, 
+            no complexity measure is provided.</p>
+          
+          <h2>Quantum Turing Machines</h2>
+          <p>In analogy to the classic Turing Machine (TM) several propositions of Quantum Turing Machines (QTM), as a model of a universal quantum computer have been made.</p>
+          <p>$  \frac{{-b}\pm\sqrt{b^2-4ac}}{2a} $ </p>
+          
+          <h2>Quantum Circuits</h2>
+          
+          <h2>Quantum Programming Languages</h2>
+          <p>When it comes to programming and the design of non-classic algorithms, we can look at the mathematical description as the specification and quantum 
+            circuits as the assembly language of QC.</p>
+          <p>Just as classical programming languages, quantum programming languages (QPLs) provide a constructive means to specify the sequence of elementary operators, 
+            while allowing nested levels of abstraction.</p>
+          
+          <h3>Flow Control</h3>
+          <p>In it's simplest form, a quantum algorithm merely consists of a unitary transformation and a subsequent measurement of the resulting state. This would 
+            e.g. be the case, if a quantum computer is used to emulate the behavior of another quantum system.</p>
+          <p>For more "traditional" computational tasks, as e.g. searching or mathematical calculations, efficient quantum implementations often have the form of probabilistic 
+            algorithms. The figure following shows the basic outline of a probabilistic non-classical algorithm with a simple evaluation loop.</p>
+          
+          <div style="text-align: center;"><figure>
+              <a href="#"><img src="images/demo/your_fig_name1.jpg" width="130" height="130" alt=""></a>
+          </figure></div>
+
+          <p>More complex quantum algorithms can also include classical random numbers, partial measurements, nested evaluation loops and multiple termination conditions: 
+            The actual quantum operations as resetting of the machine state, unitary transformations and measurements are embedded into a classical flow-control framework.</p>
+          <p>A formal way to describe the classical control structure, is to consider quantum operations as special statements within a classical procedural language. 
+            Therefor any QPL also has to be a universal programming language.</p>
+          
+          <h3>Operator Specification</h3>
+          <p>Classical procedural languages provide different levels of abstraction by allowing the grouping of primitives into reusable subroutines (procedures) which can 
+            operate on different data (parameters, references) and use temporally allocated memory (local variables).</p>
+          <p>If this concept is to be used for the definition of unitary operators, then language elements have to be provided which account for the reversibility of unitary 
+            transformation and the non-local nature of entangled quantum bits.</p>
+          <p>
+            <ul>
+            <li><b>Mathematical Semantics:</b>
+              The effect of an operator has to be <I>uniform</I> and has to be restricted to the quantum machine state i.e.the use of an operator must not interfere with 
+              the classical state of the machine.
+              <p>This means that the implementation of an operator must only depend on its parameters and must not produce any side-effects. This esp. excludes the use of 
+                global variables and the use of non-deterministic functions (such as a random numbers).</p>
+            </li>
+            <li><b>Unitarity:</b>
+                It has to be assured that operators are restricted to unitary transformation. This excludes non-unitary quantum operations such as measurement.
+            </li>
+            <li><b>Reversibility:</b>
+              Since for any unitary operator, there exists an inverse adjoint operator, a QPL should provide means to execute operators in reverse.
+            </li>
+            <li><b>Symbolic Registers:</b>
+              An operator must be able to operate on any set of qubits. This requires the ability to define symbolic quantum registers.
+            </li>
+            </ul>
+          </p>
+
         </article>
         <!-- article 2 -->
         <article class="two_quarter lastbox">
           <!-- You can add figure here-->
           <figure>
             <ul class="clear">
-              <li><a href="#"><img src="../images/demo/your_fig_name1.jpg" width="130" height="130" alt=""></a></li>
-              <li><a href="#"><img src="../images/demo/your_fig_name2.gif" width="130" height="130" alt=""></a></li>
-              <li class="last"><a href="#"><img src="../images/demo/your_fig_name3.png" width="130" height="130" alt=""></a></li>
+              <li><a href="#"><img src="images/demo/your_fig_name1.jpg" width="130" height="130" alt=""></a></li>
+              <li><a href="#"><img src="images/demo/your_fig_name2.gif" width="130" height="130" alt=""></a></li>
+              <li class="last"><a href="#"><img src="images/demo/your_fig_name3.png" width="130" height="130" alt=""></a></li>
             </ul>
             <figcaption>Figure Caption</figcaption>
           </figure>
