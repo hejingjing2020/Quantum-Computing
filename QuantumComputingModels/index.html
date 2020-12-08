@@ -2,6 +2,12 @@
 <html lang="en" dir="ltr"><!--english, left to right-->
 <head>
 <title>Quantum Computing Models</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 <meta charset="UTF-8">
   
 <link rel="stylesheet" href="/styles/layout.css" type="/text/css">
@@ -54,7 +60,8 @@
             no complexity measure is provided.</p>
           
           <h2>Quantum Turing Machines</h2>
-          
+          <p>In analogy to the classic Turing Machine (TM) several propositions of Quantum Turing Machines (QTM), as a model of a universal quantum computer have been made.</p>
+          <p>When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>
           <h2>Quantum Circuits</h2>
           
           <h2>Quantum Programming Languages</h2>
@@ -70,9 +77,7 @@
             algorithms. The figure following shows the basic outline of a probabilistic non-classical algorithm with a simple evaluation loop.</p>
           
           <div style="text-align: center;"><figure>
-            <ul class="clear">
               <a href="#"><img src="/images/demo/your_fig_name1.jpg" width="130" height="130" alt=""></a>
-            </ul>
           </figure></div>
 
           <p>More complex quantum algorithms can also include classical random numbers, partial measurements, nested evaluation loops and multiple termination conditions: 
