@@ -56,11 +56,11 @@
           <h2>Quantum Turing Machines</h2>
           <p>In analogy to the classic Turing Machine (TM) several propositions of Quantum Turing Machines (QTM), as a model of a universal quantum computer have been made.</p>
           <p>The complete machine-state 
-            <img src="http://latex.codecogs.com/gif.latex?{\vert\Psi \rangle}"/ alt="${\vert\Psi \rangle}$"> is thereby given by a superposition of base-states 
-            <img src="http://latex.codecogs.com/gif.latex?{\vert l,j,s \rangle}"/ alt="${\vert l,j,s \rangle}$">, where 
-            <img src="http://latex.codecogs.com/gif.latex?l"/ alt="$l$"> is the inner state of the head, 
-            <img src="http://latex.codecogs.com/gif.latex?j"/ alt="$j$"> the head position and 
-            <img src="http://latex.codecogs.com/gif.latex?s"/ alt="$s$"> the binary representation of the tape-content. To keep 
+            <img src="http://latex.codecogs.com/gif.latex?{\vert\Psi \rangle}" alt="${\vert\Psi \rangle}$"> is thereby given by a superposition of base-states 
+            <img src="http://latex.codecogs.com/gif.latex?{\vert l,j,s \rangle}" alt="${\vert l,j,s \rangle}$">, where 
+            <img src="http://latex.codecogs.com/gif.latex?l" alt="$l$"> is the inner state of the head, 
+            <img src="http://latex.codecogs.com/gif.latex?j" alt="$j$"> the head position and 
+            <img src="http://latex.codecogs.com/gif.latex?s" alt="$s$"> the binary representation of the tape-content. To keep 
             <img src="http://latex.codecogs.com/gif.latex?\mathcal{H}" alt="$\mathcal{H}$"> separable, the (infinite) bit-string 
             <img src="http://latex.codecogs.com/gif.latex?s" alt="$s$"> has to meet the <I>zero tail state</I> condition i.e. only a finite number of bits with 
             <img src="http://latex.codecogs.com/gif.latex?s_m \neq 0" alt="$s_m \neq 0$"> are allowed.</p>
@@ -77,17 +77,17 @@
           <p>Quantum circuits are the QC equivalent to classical boolean feed-forward networks, with one major difference: since all quantum computations have to be unitary, 
             all quantum circuits can be evaluated in both directions (as with classical reversible logic). Quantum circuits are composed of elementary gates and operate on 
             qubits, thus <img src="../images/demo/dim.gif" width="110" height="37" align="middle" alt="$\dim(\mathcal{H})=2^n$"> where 
-            <img src="../images/demo/n.gif"  width="16" height="17" align="bottom" alt="$n$"> 
+            <img src="http://latex.codecogs.com/gif.latex?n" alt="$n$"> 
             is the (fixed) number of qubits. The "wiring" between the gates thereby corresponds to unitary reordering operators 
-            <img src="../images/demo/sum.gif" align="middle" width="26" height="34" alt="$\Pi_{\mathbf{s}}$">.</p>
+            <img src="http://latex.codecogs.com/gif.latex?\Pi_{\mathbf{s}}" alt="$\Pi_{\mathbf{s}}$">.</p>
           <p>In comparison with classical boolean feed-forward networks, this imposes the following restrictions:</p>
           <p>
             <ul>
-              <li>Only <img src="../images/demo/n.gif" width="16" height="17" align="bottom" alt="$n$">-to-
-                <img src="../images/demo/n.gif" align="bottom" width="16" height="17" alt="$n$"> networks are allowed 
+              <li>Only <img src="http://latex.codecogs.com/gif.latex?n" alt="$n$">-to-
+                <img src="http://latex.codecogs.com/gif.latex?n" alt="$n$"> networks are allowed 
                 i.e. the total number of inputs has to match the total number of outputs.</li>
-              <li>Only <img src="../images/demo/n.gif" align="bottom" alt="$n$">-to-
-                <img src="../images/demo/n.gif" align="bottom" width="16" height="17" alt="$n$"> gates are allowed.</li>
+              <li>Only <img src="http://latex.codecogs.com/gif.latex?n" alt="$n$">-to-
+                <img src="http://latex.codecogs.com/gif.latex?n" alt="$n$"> gates are allowed.</li>
               <li>
                 No forking of inputs is allowed. This is directly related to the fact that qubits can't be copied, i.e. that there exists no unitary operation
                 <div style="../text-align: center;">
@@ -106,10 +106,10 @@
           </p>
           <p>To allow for implementation of all possible unitary transformations, a universal set of elementary gates must be available, out of which composed 
             gates can be constructed. Each 
-            <img src="../images/demo/m.gif" width="21" height="17" align="bottom" alt="$m$">-qubit gate 
-            <img src="../images/demo/U.gif" width="19" height="18" align="bottom" alt="$U$"> thereby describes up to 
-            <img src="../images/demo/n2.gif" width="53" height="41" align="middle" alt="$\frac{n!}{(n-m)!}$"> different unitary transformations 
-            <img src="../images/demo/Us.gif" width="42" height="37" align="middle" alt="$U(\mathbf{s})$">, depending on the wiring of the inputs.</p>
+            <img src="http://latex.codecogs.com/gif.latex?m" alt="$m$">-qubit gate 
+            <img src="http://latex.codecogs.com/gif.latex?U" alt="$U$"> thereby describes up to 
+            <img src="http://latex.codecogs.com/gif.latex?\frac{n!}{(n-m)!}" alt="$\frac{n!}{(n-m)!}$"> different unitary transformations 
+            <img src="http://latex.codecogs.com/gif.latex?U(\mathbf{s})" alt="$U(\mathbf{s})$">, depending on the wiring of the inputs.</p>
           <p>As opposed to the operator formalism, the gate-notation is an inherently constructive method and -- other than QTMs -- the complexity of the problem 
             is directly reflected in the number of gates necessary to implement it.</p>
           
