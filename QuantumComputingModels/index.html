@@ -2,58 +2,42 @@
 <html lang="en" dir="ltr"><!--english, left to right-->
 <head>
 <title>Quantum Computing Models</title>
+  <base href="..\">
 <meta charset="UTF-8">
   
-<link rel="stylesheet" href="/styles/layout.css" type="/text/css">
+<link rel="stylesheet" href="styles/layout.css" type="text/css">
   
 <!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
 </head>
 <body>
-<div class="wrapper row1">
-  <header id="header" class="clear">
-    <div id="hgroup">
-      <h2>Quantum Computing Models</h2>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="https://hejingjing2020.github.io/Quantum-Computing/">Back to Main Page</a></li>
-      </ul>
-    </nav>
-  </header>
-</div>
 <!-- content -->
-<div class="wrapper row2">
-  <div id="container" class="clear">
-    <!-- Slider -->
-    <section id="slider" class="clear">
-      <figure><img src="/images/demo/630x300.gif" alt="">
-        <figcaption>
-          <p>In classical information theory, the concept of the universal computer can be represented by several equivalent models, corresponding to different scientific 
+  <article class="user_reviews">
+          <h6 style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">In classical information theory, the concept of the universal computer can be represented by several equivalent models, corresponding to different scientific 
             approaches. From a mathematical point of view, a universal computer is a machine capable of calculating <I>partial recursive functions</I>, computer 
             scientists often use the <I>Turing machine</I> as their favorite model, an electro-engineer would possibly speak of <I>logic circuits</I> while a programmer 
             certainly will prefer a <I>universal programming language</I>.</p>
           <p>As for quantum computation, each of these classical concepts has a quantum counterpart:</p>
-
-          <footer class="more"><a href="#">You can add hyperlink here&raquo;</a></footer>
-        </figcaption>
-      </figure>
-    </section>
+    </h6>
+ </article>
     <!-- main content -->
     <div id="intro">
       <section class="clear">
         <!-- article 1 -->
         <article class="two_quarter">
-          <h2>Unitary Operators</h2>
-          <p>The paradigm of computation as a physical process requires that QC can -- in principle -- be described by the same means as any other physical reality, 
-            which, for the field of quantum physics, is the mathematical formalism of Hilbert space operator algebra.</p>
-          <p>The moral equivalent in QC to partial recursive functions, the mathematical concept of classical computability, are unitary operators. As every 
-            classically computable problem can be reformulated as calculating the value of a partial recursive function, each quantum computation must have 
-            a corresponding unitary operator.</p>
-          <p>The mathematical description of an operator is inherently declarative; the actual implementation for a certain quantum architecture i.e. the algorithmic 
-            decomposition into elementary operations, is beyond the scope of this formalism. Also, since the mathematical model treats unitary operators as black boxes, 
-            no complexity measure is provided.</p>
+          <h2 style="font-size:3vw; color:black" align="center">Unitary Operators</h2>
+          <h6 style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">
+            <p>The paradigm of computation as a physical process requires that QC can -- in principle -- be described by the same means as any other physical reality, 
+              which, for the field of quantum physics, is the mathematical formalism of Hilbert space operator algebra.</p>
+            <p>The moral equivalent in QC to partial recursive functions, the mathematical concept of classical computability, are unitary operators. As every 
+              classically computable problem can be reformulated as calculating the value of a partial recursive function, each quantum computation must have 
+              a corresponding unitary operator.</p>
+            <p>The mathematical description of an operator is inherently declarative; the actual implementation for a certain quantum architecture i.e. the algorithmic 
+              decomposition into elementary operations, is beyond the scope of this formalism. Also, since the mathematical model treats unitary operators as black boxes, 
+              no complexity measure is provided.</p>
+          </h6>
           
-          <h2>Quantum Turing Machines</h2>
+          <h2 style="font-size:3vw; color:black" align="center">Quantum Turing Machines</h2>
+          <h6 style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">
           <p>In analogy to the classic Turing Machine (TM) several propositions of Quantum Turing Machines (QTM), as a model of a universal quantum computer have been made.</p>
           <p>The complete machine-state 
             <img src="http://latex.codecogs.com/gif.latex?{\vert\Psi \rangle}" alt="${\vert\Psi \rangle}$"> is thereby given by a superposition of base-states 
@@ -72,8 +56,10 @@
             (i.e. the number of applications of 
             <img src="http://latex.codecogs.com/gif.latex?T" alt="$T$"> 
             in relation to the problem size) remains an issue. Outside quantum complexity theory, QTMs are of minor importance.</p>
+          </h6>
           
-          <h2>Quantum Circuits</h2>
+          <h2 style="font-size:3vw; color:black" align="center">Quantum Circuits</h2>
+          <h6 style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">
           <p>Quantum circuits are the QC equivalent to classical boolean feed-forward networks, with one major difference: since all quantum computations have to be unitary, 
             all quantum circuits can be evaluated in both directions (as with classical reversible logic). Quantum circuits are composed of elementary gates and operate on 
             qubits, thus <img src="http://latex.codecogs.com/gif.latex?\dim(\mathcal{H})=2^n" alt="$\dim(\mathcal{H})=2^n$"> where 
@@ -114,29 +100,37 @@
             <img src="http://latex.codecogs.com/gif.latex?U(\mathbf{s})" alt="$U(\mathbf{s})$">, depending on the wiring of the inputs.</p>
           <p>As opposed to the operator formalism, the gate-notation is an inherently constructive method and -- other than QTMs -- the complexity of the problem 
             is directly reflected in the number of gates necessary to implement it.</p>
-          
-          <h2>Quantum Programming Languages</h2>
+          </h6>
+        
+        
+          <h2 style="font-size:3vw; color:black" align="center">Quantum Programming Languages</h2>
+        <h6 style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">
           <p>When it comes to programming and the design of non-classic algorithms, we can look at the mathematical description as the specification and quantum 
             circuits as the assembly language of QC.</p>
           <p>Just as classical programming languages, quantum programming languages (QPLs) provide a constructive means to specify the sequence of elementary operators, 
             while allowing nested levels of abstraction.</p>
+        </h6>
           
-          <h3>Flow Control</h3>
+          <h2 style="font-size:3vw; color:black" align="center">Flow Control</h2>
+        <h6 style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">
           <p>In it's simplest form, a quantum algorithm merely consists of a unitary transformation and a subsequent measurement of the resulting state. This would 
             e.g. be the case, if a quantum computer is used to emulate the behavior of another quantum system.</p>
           <p>For more "traditional" computational tasks, as e.g. searching or mathematical calculations, efficient quantum implementations often have the form of probabilistic 
             algorithms. The figure following shows the basic outline of a probabilistic non-classical algorithm with a simple evaluation loop.</p>
-          
+        
           <div style="text-align: center;"><figure>
-              <a href="#"><img src="../images/demo/non-classical.gif" width="330" height="404" alt=""></a>
+              <img src="images/demo/non-classical.gif" width="330" height="404" alt="">
           </figure></div>
 
           <p>More complex quantum algorithms can also include classical random numbers, partial measurements, nested evaluation loops and multiple termination conditions: 
             The actual quantum operations as resetting of the machine state, unitary transformations and measurements are embedded into a classical flow-control framework.</p>
           <p>A formal way to describe the classical control structure, is to consider quantum operations as special statements within a classical procedural language. 
             Therefor any QPL also has to be a universal programming language.</p>
-          
-          <h3>Operator Specification</h3>
+          </h6>
+        
+        
+          <h2 style="font-size:3vw; color:black" align="center">Operator Specification</h2>
+        <h6 style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">
           <p>Classical procedural languages provide different levels of abstraction by allowing the grouping of primitives into reusable subroutines (procedures) which can 
             operate on different data (parameters, references) and use temporally allocated memory (local variables).</p>
           <p>If this concept is to be used for the definition of unitary operators, then language elements have to be provided which account for the reversibility of unitary 
@@ -160,7 +154,9 @@
             </li>
             </ul>
           </p>
-
+        </h6>
+      
+      
         </article>
         <!-- article 2 -->
         <article class="two_quarter lastbox">
@@ -168,8 +164,8 @@
           <figure>
             <ul class="clear">
               <li><a href="#"><img src="images/demo/630x300.jpg" alt=""></a></li>
-              <li><a href="#"><img src="/images/demo/your_fig_name2.gif" width="130" height="130" alt=""></a></li>
-              <li class="last"><a href="#"><img src="/images/demo/your_fig_name3.png" width="130" height="130" alt=""></a></li>
+              <li><a href="#"><img src="images/demo/your_fig_name2.gif" width="130" height="130" alt=""></a></li>
+              <li class="last"><a href="#"><img src="images/demo/your_fig_name3.png" width="130" height="130" alt=""></a></li>
             </ul>
             <figcaption>Figure Caption</figcaption>
           </figure>
