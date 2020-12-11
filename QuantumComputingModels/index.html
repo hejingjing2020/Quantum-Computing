@@ -22,176 +22,177 @@
     </nav>
   </header>
 </div>
+<div class="wrapper row2">
+  <div id="container" class="clear">
+  <div id="intro">
+    <section class="clear">        
+    <article style="margin:25px 300px 75px 285px"; class="user_reviews">
+            <h6 style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">In classical information theory, the concept of the universal computer can be represented by several equivalent models, corresponding to different scientific 
+              approaches. From a mathematical point of view, a universal computer is a machine capable of calculating <I>partial recursive functions</I>, computer 
+              scientists often use the <I>Turing machine</I> as their favorite model, an electro-engineer would possibly speak of <I>logic circuits</I> while a programmer 
+              certainly will prefer a <I>universal programming language</I>.</p>
+            <p>As for quantum computation, each of these classical concepts has a quantum counterpart:</p>
+      </h6>
+   </article>
+      <!-- main content -->
+          <!-- article 1 -->
+          <article style="margin:25px 200px 75px 200px"; class="user_reviews">
+            <h2 style="font-size:3vw; color:black" align="center">Unitary Operators</h2>
+            <h6 style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">
+              <p>The paradigm of computation as a physical process requires that QC can -- in principle -- be described by the same means as any other physical reality, 
+                which, for the field of quantum physics, is the mathematical formalism of Hilbert space operator algebra.</p>
+              <p>The moral equivalent in QC to partial recursive functions, the mathematical concept of classical computability, are unitary operators. As every 
+                classically computable problem can be reformulated as calculating the value of a partial recursive function, each quantum computation must have 
+                a corresponding unitary operator.</p>
+              <p>The mathematical description of an operator is inherently declarative; the actual implementation for a certain quantum architecture i.e. the algorithmic 
+                decomposition into elementary operations, is beyond the scope of this formalism. Also, since the mathematical model treats unitary operators as black boxes, 
+                no complexity measure is provided.</p>
+            </h6>
 
-<div id="intro">
-  <section class="clear">        
-  <article style="margin:25px 300px 75px 285px"; class="user_reviews">
-          <h6 style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">In classical information theory, the concept of the universal computer can be represented by several equivalent models, corresponding to different scientific 
-            approaches. From a mathematical point of view, a universal computer is a machine capable of calculating <I>partial recursive functions</I>, computer 
-            scientists often use the <I>Turing machine</I> as their favorite model, an electro-engineer would possibly speak of <I>logic circuits</I> while a programmer 
-            certainly will prefer a <I>universal programming language</I>.</p>
-          <p>As for quantum computation, each of these classical concepts has a quantum counterpart:</p>
-    </h6>
- </article>
-    <!-- main content -->
-        <!-- article 1 -->
-        <article style="margin:25px 200px 75px 200px"; class="user_reviews">
-          <h2 style="font-size:3vw; color:black" align="center">Unitary Operators</h2>
-          <h6 style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">
-            <p>The paradigm of computation as a physical process requires that QC can -- in principle -- be described by the same means as any other physical reality, 
-              which, for the field of quantum physics, is the mathematical formalism of Hilbert space operator algebra.</p>
-            <p>The moral equivalent in QC to partial recursive functions, the mathematical concept of classical computability, are unitary operators. As every 
-              classically computable problem can be reformulated as calculating the value of a partial recursive function, each quantum computation must have 
-              a corresponding unitary operator.</p>
-            <p>The mathematical description of an operator is inherently declarative; the actual implementation for a certain quantum architecture i.e. the algorithmic 
-              decomposition into elementary operations, is beyond the scope of this formalism. Also, since the mathematical model treats unitary operators as black boxes, 
-              no complexity measure is provided.</p>
-          </h6>
-          
-          <h2 style="font-size:3vw; color:black" align="center">Quantum Turing Machines</h2>
-          <h6 style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">
-          <p>In analogy to the classic Turing Machine (TM) several propositions of Quantum Turing Machines (QTM), as a model of a universal quantum computer have been made.</p>
-          <p>The complete machine-state 
-            <img src="http://latex.codecogs.com/gif.latex?{\vert\Psi \rangle}" alt="${\vert\Psi \rangle}$"> is thereby given by a superposition of base-states 
-            <img src="http://latex.codecogs.com/gif.latex?{\vert l,j,s \rangle}" alt="${\vert l,j,s \rangle}$">, where 
-            <img src="http://latex.codecogs.com/gif.latex?l" alt="$l$"> is the inner state of the head, 
-            <img src="http://latex.codecogs.com/gif.latex?j" alt="$j$"> the head position and 
-            <img src="http://latex.codecogs.com/gif.latex?s" alt="$s$"> the binary representation of the tape-content. To keep 
-            <img src="http://latex.codecogs.com/gif.latex?\mathcal{H}" alt="$\mathcal{H}$"> separable, the (infinite) bit-string 
-            <img src="http://latex.codecogs.com/gif.latex?s" alt="$s$"> has to meet the <I>zero tail state</I> condition i.e. only a finite number of bits with 
-            <img src="http://latex.codecogs.com/gif.latex?s_m \neq 0" alt="$s_m \neq 0$"> are allowed.</p>
-          <p>The quantum analogon to the transition function of a classic probabilistic TM is the step operator 
-            <img src="http://latex.codecogs.com/gif.latex?T" alt="$T$">
-            , which has to be unitary to allow for the existence of a corresponding Hamiltonian and meet locality conditions for the effected tape-qubit, as well as for 
-            head movement.</p>
-          <p>QTMs provide a measure for execution times, but -- as with the classical TM -- finding an appropriate step operator can be very hard and runtime-complexity 
-            (i.e. the number of applications of 
-            <img src="http://latex.codecogs.com/gif.latex?T" alt="$T$"> 
-            in relation to the problem size) remains an issue. Outside quantum complexity theory, QTMs are of minor importance.</p>
-          </h6>
-          
-          <h2 style="font-size:3vw; color:black" align="center">Quantum Circuits</h2>
-          <h6 style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">
-          <p>Quantum circuits are the QC equivalent to classical boolean feed-forward networks, with one major difference: since all quantum computations have to be unitary, 
-            all quantum circuits can be evaluated in both directions (as with classical reversible logic). Quantum circuits are composed of elementary gates and operate on 
-            qubits, thus <img src="http://latex.codecogs.com/gif.latex?\dim(\mathcal{H})=2^n" alt="$\dim(\mathcal{H})=2^n$"> where 
-            <img src="http://latex.codecogs.com/gif.latex?n" alt="$n$"> 
-            is the (fixed) number of qubits. The "wiring" between the gates thereby corresponds to unitary reordering operators 
-            <img src="http://latex.codecogs.com/gif.latex?\Pi_{\mathbf{s}}" alt="$\Pi_{\mathbf{s}}$">.</p>
-          <p>In comparison with classical boolean feed-forward networks, this imposes the following restrictions:</p>
-          <p>
-            <ul>
-              <li>Only <img src="http://latex.codecogs.com/gif.latex?n" alt="$n$">-to-
-                <img src="http://latex.codecogs.com/gif.latex?n" alt="$n$"> networks are allowed 
-                i.e. the total number of inputs has to match the total number of outputs.</li>
-              <li>Only <img src="http://latex.codecogs.com/gif.latex?n" alt="$n$">-to-
-                <img src="http://latex.codecogs.com/gif.latex?n" alt="$n$"> gates are allowed.</li>
-              <li>
-                No forking of inputs is allowed. This is directly related to the fact that qubits can't be copied, i.e. that there exists no unitary operation
-                <div style="../text-align: center;">
-                  <img src="http://latex.codecogs.com/gif.latex?\mathrm{Copy}\,{|\psi\rangle}{|0\rangle}\to{|\psi\rangle}{|\psi\rangle}\quad\mathrm{with}\quad{|\psi\rangle}
-                    \in\mathbf{C}^2" alt="\mathrm{Copy}\,{|\psi\rangle}{|0\rangle}\to{|\psi\rangle}{|\psi\rangle}\quad\mathrm{with}\quad{|\psi\rangle}\in\mathbf{C}^2">
-                </div>
-                which can turn a general qubit-state into a product state of itself.
-              </li>
-              <li>
-                No "dead ends" are allowed. Again, this is because the erasure of a qubit
-                <div style="../text-align: center;">
-                  <img src="http://latex.codecogs.com/gif.latex?\mathrm{Erase}\,{|\psi\rangle}\to{|0\rangle}\quad\mathrm{with}\quad{|\psi\rangle}\in\mathbf{C}^2"
-                    alt="\mathrm{Erase}\,{|\psi\rangle}\to{|0\rangle}\quad\mathrm{with}\quad{|\psi\rangle}\in\mathbf{C}^2">
-                </div>
-                is not a unitary operation.
-              </li>
-            </ul>
-          </p>
-          <p>To allow for implementation of all possible unitary transformations, a universal set of elementary gates must be available, out of which composed 
-            gates can be constructed. Each 
-            <img src="http://latex.codecogs.com/gif.latex?m" alt="$m$">-qubit gate 
-            <img src="http://latex.codecogs.com/gif.latex?U" alt="$U$"> thereby describes up to 
-            <img src="http://latex.codecogs.com/gif.latex?\frac{n!}{(n-m)!}" alt="$\frac{n!}{(n-m)!}$"> different unitary transformations 
-            <img src="http://latex.codecogs.com/gif.latex?U(\mathbf{s})" alt="$U(\mathbf{s})$">, depending on the wiring of the inputs.</p>
-          <p>As opposed to the operator formalism, the gate-notation is an inherently constructive method and -- other than QTMs -- the complexity of the problem 
-            is directly reflected in the number of gates necessary to implement it.</p>
-          </h6>
-        
-        
-          <h2 style="font-size:3vw; color:black" align="center">Quantum Programming Languages</h2>
-        <h6 style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">
-          <p>When it comes to programming and the design of non-classic algorithms, we can look at the mathematical description as the specification and quantum 
-            circuits as the assembly language of QC.</p>
-          <p>Just as classical programming languages, quantum programming languages (QPLs) provide a constructive means to specify the sequence of elementary operators, 
-            while allowing nested levels of abstraction.</p>
-        </h6>
-          
-          <h4 style="font-size:3vw; color:black" align="center">Flow Control</h4>
-        <h6 style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">
-          <p>In it's simplest form, a quantum algorithm merely consists of a unitary transformation and a subsequent measurement of the resulting state. This would 
-            e.g. be the case, if a quantum computer is used to emulate the behavior of another quantum system.</p>
-          <p>For more "traditional" computational tasks, as e.g. searching or mathematical calculations, efficient quantum implementations often have the form of probabilistic 
-            algorithms. The figure following shows the basic outline of a probabilistic non-classical algorithm with a simple evaluation loop.</p>
-        
-          <div style="text-align: center;"><figure>
-              <img src="images/demo/non-classical.gif" width="330" height="404" alt="">
-          </figure></div>
+            <h2 style="font-size:3vw; color:black" align="center">Quantum Turing Machines</h2>
+            <h6 style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">
+            <p>In analogy to the classic Turing Machine (TM) several propositions of Quantum Turing Machines (QTM), as a model of a universal quantum computer have been made.</p>
+            <p>The complete machine-state 
+              <img src="http://latex.codecogs.com/gif.latex?{\vert\Psi \rangle}" alt="${\vert\Psi \rangle}$"> is thereby given by a superposition of base-states 
+              <img src="http://latex.codecogs.com/gif.latex?{\vert l,j,s \rangle}" alt="${\vert l,j,s \rangle}$">, where 
+              <img src="http://latex.codecogs.com/gif.latex?l" alt="$l$"> is the inner state of the head, 
+              <img src="http://latex.codecogs.com/gif.latex?j" alt="$j$"> the head position and 
+              <img src="http://latex.codecogs.com/gif.latex?s" alt="$s$"> the binary representation of the tape-content. To keep 
+              <img src="http://latex.codecogs.com/gif.latex?\mathcal{H}" alt="$\mathcal{H}$"> separable, the (infinite) bit-string 
+              <img src="http://latex.codecogs.com/gif.latex?s" alt="$s$"> has to meet the <I>zero tail state</I> condition i.e. only a finite number of bits with 
+              <img src="http://latex.codecogs.com/gif.latex?s_m \neq 0" alt="$s_m \neq 0$"> are allowed.</p>
+            <p>The quantum analogon to the transition function of a classic probabilistic TM is the step operator 
+              <img src="http://latex.codecogs.com/gif.latex?T" alt="$T$">
+              , which has to be unitary to allow for the existence of a corresponding Hamiltonian and meet locality conditions for the effected tape-qubit, as well as for 
+              head movement.</p>
+            <p>QTMs provide a measure for execution times, but -- as with the classical TM -- finding an appropriate step operator can be very hard and runtime-complexity 
+              (i.e. the number of applications of 
+              <img src="http://latex.codecogs.com/gif.latex?T" alt="$T$"> 
+              in relation to the problem size) remains an issue. Outside quantum complexity theory, QTMs are of minor importance.</p>
+            </h6>
 
-          <p>More complex quantum algorithms can also include classical random numbers, partial measurements, nested evaluation loops and multiple termination conditions: 
-            The actual quantum operations as resetting of the machine state, unitary transformations and measurements are embedded into a classical flow-control framework.</p>
-          <p>A formal way to describe the classical control structure, is to consider quantum operations as special statements within a classical procedural language. 
-            Therefor any QPL also has to be a universal programming language.</p>
+            <h2 style="font-size:3vw; color:black" align="center">Quantum Circuits</h2>
+            <h6 style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">
+            <p>Quantum circuits are the QC equivalent to classical boolean feed-forward networks, with one major difference: since all quantum computations have to be unitary, 
+              all quantum circuits can be evaluated in both directions (as with classical reversible logic). Quantum circuits are composed of elementary gates and operate on 
+              qubits, thus <img src="http://latex.codecogs.com/gif.latex?\dim(\mathcal{H})=2^n" alt="$\dim(\mathcal{H})=2^n$"> where 
+              <img src="http://latex.codecogs.com/gif.latex?n" alt="$n$"> 
+              is the (fixed) number of qubits. The "wiring" between the gates thereby corresponds to unitary reordering operators 
+              <img src="http://latex.codecogs.com/gif.latex?\Pi_{\mathbf{s}}" alt="$\Pi_{\mathbf{s}}$">.</p>
+            <p>In comparison with classical boolean feed-forward networks, this imposes the following restrictions:</p>
+            <p>
+              <ul>
+                <li>Only <img src="http://latex.codecogs.com/gif.latex?n" alt="$n$">-to-
+                  <img src="http://latex.codecogs.com/gif.latex?n" alt="$n$"> networks are allowed 
+                  i.e. the total number of inputs has to match the total number of outputs.</li>
+                <li>Only <img src="http://latex.codecogs.com/gif.latex?n" alt="$n$">-to-
+                  <img src="http://latex.codecogs.com/gif.latex?n" alt="$n$"> gates are allowed.</li>
+                <li>
+                  No forking of inputs is allowed. This is directly related to the fact that qubits can't be copied, i.e. that there exists no unitary operation
+                  <div style="../text-align: center;">
+                    <img src="http://latex.codecogs.com/gif.latex?\mathrm{Copy}\,{|\psi\rangle}{|0\rangle}\to{|\psi\rangle}{|\psi\rangle}\quad\mathrm{with}\quad{|\psi\rangle}
+                      \in\mathbf{C}^2" alt="\mathrm{Copy}\,{|\psi\rangle}{|0\rangle}\to{|\psi\rangle}{|\psi\rangle}\quad\mathrm{with}\quad{|\psi\rangle}\in\mathbf{C}^2">
+                  </div>
+                  which can turn a general qubit-state into a product state of itself.
+                </li>
+                <li>
+                  No "dead ends" are allowed. Again, this is because the erasure of a qubit
+                  <div style="../text-align: center;">
+                    <img src="http://latex.codecogs.com/gif.latex?\mathrm{Erase}\,{|\psi\rangle}\to{|0\rangle}\quad\mathrm{with}\quad{|\psi\rangle}\in\mathbf{C}^2"
+                      alt="\mathrm{Erase}\,{|\psi\rangle}\to{|0\rangle}\quad\mathrm{with}\quad{|\psi\rangle}\in\mathbf{C}^2">
+                  </div>
+                  is not a unitary operation.
+                </li>
+              </ul>
+            </p>
+            <p>To allow for implementation of all possible unitary transformations, a universal set of elementary gates must be available, out of which composed 
+              gates can be constructed. Each 
+              <img src="http://latex.codecogs.com/gif.latex?m" alt="$m$">-qubit gate 
+              <img src="http://latex.codecogs.com/gif.latex?U" alt="$U$"> thereby describes up to 
+              <img src="http://latex.codecogs.com/gif.latex?\frac{n!}{(n-m)!}" alt="$\frac{n!}{(n-m)!}$"> different unitary transformations 
+              <img src="http://latex.codecogs.com/gif.latex?U(\mathbf{s})" alt="$U(\mathbf{s})$">, depending on the wiring of the inputs.</p>
+            <p>As opposed to the operator formalism, the gate-notation is an inherently constructive method and -- other than QTMs -- the complexity of the problem 
+              is directly reflected in the number of gates necessary to implement it.</p>
+            </h6>
+
+
+            <h2 style="font-size:3vw; color:black" align="center">Quantum Programming Languages</h2>
+          <h6 style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">
+            <p>When it comes to programming and the design of non-classic algorithms, we can look at the mathematical description as the specification and quantum 
+              circuits as the assembly language of QC.</p>
+            <p>Just as classical programming languages, quantum programming languages (QPLs) provide a constructive means to specify the sequence of elementary operators, 
+              while allowing nested levels of abstraction.</p>
           </h6>
-        
-        
-          <h4 style="font-size:3vw; color:black" align="center">Operator Specification</h4>
-        <h6 style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">
-          <p>Classical procedural languages provide different levels of abstraction by allowing the grouping of primitives into reusable subroutines (procedures) which can 
-            operate on different data (parameters, references) and use temporally allocated memory (local variables).</p>
-          <p>If this concept is to be used for the definition of unitary operators, then language elements have to be provided which account for the reversibility of unitary 
-            transformation and the non-local nature of entangled quantum bits.</p>
-          <p>
-            <ul>
-            <li><b>Mathematical Semantics:</b>
-              The effect of an operator has to be <I>uniform</I> and has to be restricted to the quantum machine state i.e.the use of an operator must not interfere with 
-              the classical state of the machine.
-              <p>This means that the implementation of an operator must only depend on its parameters and must not produce any side-effects. This esp. excludes the use of 
-                global variables and the use of non-deterministic functions (such as a random numbers).</p>
-            </li>
-            <li><b>Unitarity:</b>
-                It has to be assured that operators are restricted to unitary transformation. This excludes non-unitary quantum operations such as measurement.
-            </li>
-            <li><b>Reversibility:</b>
-              Since for any unitary operator, there exists an inverse adjoint operator, a QPL should provide means to execute operators in reverse.
-            </li>
-            <li><b>Symbolic Registers:</b>
-              An operator must be able to operate on any set of qubits. This requires the ability to define symbolic quantum registers.
-            </li>
-            </ul>
-          </p>
-        </h6>
-      
-      
-        </article>
-        <!-- article 2 -->
-        <article class="two_quarter lastbox">
-          <!-- You can add figure here-->
-        </article>
-      </section>
-    </div>
-    <!-- ########################################################################################## -->
-    <!-- ########################################################################################## -->
-    <!-- ########################################################################################## -->
-    <!-- ########################################################################################## -->
-    <div id="homepage" class="last clear">
-      
-      <section class="two_quarter lastbox">
-        <h2 class="title">About US</h2>
-        <p>We are from The Chinese University of Hong Kong, Shenzhen. You can contact us via email:</p>
-        <p>Chen Yanlin 118010028@link.cuhk.edu.cn</p>
-        <p>Qin Lan 118010246@link.cuhk.edu.cn</p>
-        <p>Wang Runyu 118010302@link.cuhk.edu.cn</p>
-        <p>He Jingjing 118010092@link.cuhk.edu.cn</p>
-        <footer class="more"><a href="https://www.cuhk.edu.cn/">Know more about our university&raquo;</a></footer>
-      </section>
-    </div>
+
+            <h4 style="font-size:3vw; color:black" align="center">Flow Control</h4>
+          <h6 style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">
+            <p>In it's simplest form, a quantum algorithm merely consists of a unitary transformation and a subsequent measurement of the resulting state. This would 
+              e.g. be the case, if a quantum computer is used to emulate the behavior of another quantum system.</p>
+            <p>For more "traditional" computational tasks, as e.g. searching or mathematical calculations, efficient quantum implementations often have the form of probabilistic 
+              algorithms. The figure following shows the basic outline of a probabilistic non-classical algorithm with a simple evaluation loop.</p>
+
+            <div style="text-align: center;"><figure>
+                <img src="images/demo/non-classical.gif" width="330" height="404" alt="">
+            </figure></div>
+
+            <p>More complex quantum algorithms can also include classical random numbers, partial measurements, nested evaluation loops and multiple termination conditions: 
+              The actual quantum operations as resetting of the machine state, unitary transformations and measurements are embedded into a classical flow-control framework.</p>
+            <p>A formal way to describe the classical control structure, is to consider quantum operations as special statements within a classical procedural language. 
+              Therefor any QPL also has to be a universal programming language.</p>
+            </h6>
+
+
+            <h4 style="font-size:3vw; color:black" align="center">Operator Specification</h4>
+          <h6 style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">
+            <p>Classical procedural languages provide different levels of abstraction by allowing the grouping of primitives into reusable subroutines (procedures) which can 
+              operate on different data (parameters, references) and use temporally allocated memory (local variables).</p>
+            <p>If this concept is to be used for the definition of unitary operators, then language elements have to be provided which account for the reversibility of unitary 
+              transformation and the non-local nature of entangled quantum bits.</p>
+            <p>
+              <ul>
+              <li><b>Mathematical Semantics:</b>
+                The effect of an operator has to be <I>uniform</I> and has to be restricted to the quantum machine state i.e.the use of an operator must not interfere with 
+                the classical state of the machine.
+                <p>This means that the implementation of an operator must only depend on its parameters and must not produce any side-effects. This esp. excludes the use of 
+                  global variables and the use of non-deterministic functions (such as a random numbers).</p>
+              </li>
+              <li><b>Unitarity:</b>
+                  It has to be assured that operators are restricted to unitary transformation. This excludes non-unitary quantum operations such as measurement.
+              </li>
+              <li><b>Reversibility:</b>
+                Since for any unitary operator, there exists an inverse adjoint operator, a QPL should provide means to execute operators in reverse.
+              </li>
+              <li><b>Symbolic Registers:</b>
+                An operator must be able to operate on any set of qubits. This requires the ability to define symbolic quantum registers.
+              </li>
+              </ul>
+            </p>
+          </h6>
+
+
+          </article>
+          <!-- article 2 -->
+          <article class="two_quarter lastbox">
+            <!-- You can add figure here-->
+          </article>
+        </section>
+      </div>
+      <!-- ########################################################################################## -->
+      <!-- ########################################################################################## -->
+      <!-- ########################################################################################## -->
+      <!-- ########################################################################################## -->
+      <div id="homepage" class="last clear">
+
+        <section class="two_quarter lastbox">
+          <h2 class="title">About US</h2>
+          <p>We are from The Chinese University of Hong Kong, Shenzhen. You can contact us via email:</p>
+          <p>Chen Yanlin 118010028@link.cuhk.edu.cn</p>
+          <p>Qin Lan 118010246@link.cuhk.edu.cn</p>
+          <p>Wang Runyu 118010302@link.cuhk.edu.cn</p>
+          <p>He Jingjing 118010092@link.cuhk.edu.cn</p>
+          <footer class="more"><a href="https://www.cuhk.edu.cn/">Know more about our university&raquo;</a></footer>
+        </section>
+      </div>
     <!-- / content body -->
   </div>
 </div>
