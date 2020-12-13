@@ -88,18 +88,67 @@ is. Namely, the initial state
           <img src="http://latex.codecogs.com/gif.latex?{\vert\Psi (t) \rangle}" alt="${\vert\Psi (t) \rangle}$">can be measured. The result of this measurement provides
 information about the simulated system. The color arrows denote the controllable operations. The solid black arrows describe the time evolution of the system and the simulator.
 The dashed arrows indicate the correspondence between the quantum states of the simulator and the simulated system. </p>
-        <p align="center">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/kD370qyxTyw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </p>
+        
         </h6>
           
           <h2 style="font-size:3vw; color:black" align="center">A. Digital Quantum Simulation (DQS)</h2>
           <h6 style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">
-            
+           We consider the well-known circuit model for quantum computation (Nielsen and Chuang, 2000). First, the
+wavefunction |φi has to be encoded using the computational basis, i.e., as a superposition of binary bit strings.
+A very simple example is the simulation of spin-1/2 particles. Each particle is represented by a qubit: the spin-up
+state |↑i is encoded as the qubit state |1i, and the spindown state |↓i as |0i. For example, the three-spin state
+            |φi = |↑↑↓i is represented in the simulator by |ψi = |110i. </p>
+          <p>
+In order to obtain |ψ(t)i = exp{−i~Ht} |ψ(0)i, U =
+exp{−i~Ht} must be applied to the initial state. The
+complicated many-qubit unitary transformation U is
+implemented through the application of a sequence of
+single- and two-qubit gates (we will come back and discuss the decomposition of U into these simple gates
+shortly). Such a circuit-based quantum simulation recreating the evolution |ψ(0)i → |ψ(t)i is usually referred
+to as digital quantum simulation (DQS). Some of the
+representative studies on DQS are (Abrams and Lloyd,
+1997; Lidar and Biham, 1997; Lloyd, 1996; Marzuoli and
+Rasetti, 2002; Ortiz et al., 2001; Raeisi et al., 2012;
+Somma et al., 2002; Terhal and DiVincenzo, 2000; Verstraete et al., 2009; Wiesner, 1996; Zalka, 1998a,b).</p>
         </h6>
 
           <h2 style="font-size:3vw; color:black" align="center">B. Anolog Quantum Simulation (AQS)</h2>
           <h6 style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">
+            
+          Another approach to simulating quantum systems by
+quantum mechanical means is analog quantum simulation (AQS), in which one quantum system mimics (emulates) another (see, e.g., (Fischer and Sch¨utzhold, 2004;
+Manousakis, 2002; Porras and Cirac, 2004b; Smirnov
+et al., 2007; Wei and Xue, 1997; Zagoskin et al., 2007)).
+The Hamiltonian of the system to be simulated, Hsys, is
+directly mapped onto the Hamiltonian of the simulator,
+Hsim, which can be controlled at least to some extent:
+Hsys ←→ Hsim. (10)
+This can be done if there is a mapping between the system and the simulator (Somaroo et al., 1999). Then
+|φ(0)i can be mapped to |ψ(0)i via an operator f
+[|ψ(0)i = f |φ(0)i], and |ψ(t)i can be mapped back to
+|φ(t)i via f
+−1
+. For Hamiltonians Hsim = fHsysf
+−1
+.
+Note that the simulator may only partly reproduce the dynamics of the system. The choice of the mapping depends on what needs to be simulated and on the capabilities of the simulator. In AQS one is usually emulating
+an effective many-body model of the simulated system.
+A controllable “toy-model” of the system is used to reproduce the property of interest, e.g. the dynamics or
+ground state.
+<p>An important advantage of AQS is that it could be
+useful even in the presence of errors, up to a certain tolerance level. For example, one is sometimes interested in
+knowing whether a certain set of physical conditions leads
+to a given quantum phase transition. Even without having the full quantitative details, a qualitative answer can
+be quite valuable in this context. If the quantum simulator suffers from uncertainties in the control parameters,
+the phase transition under study could still be observed,
+            hence providing the answer to the question of interest.</p>
+<p>Finding the mapping in an AQS might, at first glance,
+look simpler than obtaining the most efficient gate decomposition for a given Hamiltonian in DQS. Sometimes
+the mapping is indeed straightforward, but this is not
+always the case, and quite often clever mappings have
+to be devised, sometimes involving additional externally
+applied fields or ancillary systems to mediate various interactions. </p>
+
           </h6>
           
          </h6>
