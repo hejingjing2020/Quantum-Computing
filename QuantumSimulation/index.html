@@ -108,15 +108,26 @@ The dashed arrows indicate the correspondence between the quantum states of the 
             <img src="http://latex.codecogs.com/gif.latex?{\vert \Phi \rangle = \vert \uparrow \uparrow \downarrow \rangle}" alt="${\vert \Phi \rangle = \vert \uparrow \uparrow \downarrow \rangle}$"> is represented in the simulator by 
             <img src="http://latex.codecogs.com/gif.latex?{\vert \Psi \rangle = \vert 110 \rangle}" alt="${\vert \Psi \rangle = \vert 110 \rangle}$">. </p>
             
-           <p>In order to obtain 
-             |ψ(t)i = exp{−i~Ht} |ψ(0)i, 
-             U = exp{−i~Ht} must be applied to the initial state. The complicated many-qubit unitary 
+           <p>In order to obtain
+             <img src="http://latex.codecogs.com/gif.latex? \vert\Psi (t) \rangle = exp \left \{ -ihHt \right \}\vert\Psi (0) \rangle" 
+                  alt="$\vert\Psi (t) \rangle = exp \left \{ -ihHt \right \}\vert\Psi (0) \rangle$">, 
+             <img src="http://latex.codecogs.com/gif.latex?U = exp \left \{ -ihHt \right \}" alt="${U = exp \left \{ -ihHt \right \}}$"> must be applied to the initial state. The complicated many-qubit unitary 
              transformation U is implemented through the application of a sequence of single- and two-qubit gates 
              (we will come back and discuss the decomposition of U into these simple gates shortly). Such a circuit-based quantum simulation recreating the evolution 
-             |ψ(0)i → |ψ(t)i is usually referred to as digital quantum simulation (DQS). 
-             Some of the representative studies on DQS are (Abrams and Lloyd, 1997; Lidar and Biham, 1997; Lloyd, 1996; Marzuoli and Rasetti, 2002; 
-             Ortiz et al., 2001; Raeisi et al., 2012; 
-             Somma et al., 2002; Terhal and DiVincenzo, 2000; Verstraete et al., 2009; Wiesner, 1996; Zalka, 1998a,b).</p>
+             <img src="http://latex.codecogs.com/gif.latex?{|\psi (0)\rangle\rightarrow |\psi (t)\rangle}" alt="${|\psi (0)\rangle\rightarrow |\psi (t)\rangle}$">
+             is usually referred to as <b> digital quantum simulation (DQS)</b>. 
+             Some of the representative studies on DQS are (
+             <a = href = "https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.79.2586">Abrams and Lloyd, 1997</a>; 
+             <a = href = "https://journals.aps.org/pre/pdf/10.1103/PhysRevE.56.3661">Lidar and Biham, 1997</a> ; 
+             <a = href = "https://science.sciencemag.org/content/273/5278/1073/tab-pdf">Lloyd, 1996</a>  ; 
+             <a = href = "https://arxiv.org/pdf/quant-ph/0209016.pdf">Marzuoli and Rasetti, 2002</a>; 
+             <a = href = "https://journals.aps.org/pra/pdf/10.1103/PhysRevA.64.022319">Ortiz et al., 2001</a>;
+             <a = href = "https://journals.aps.org/pra/pdf/10.1103/PhysRevA.64.022319">Raeisi et al., 2012</a>; 
+             <a = href = "https://journals.aps.org/pra/pdf/10.1103/PhysRevA.65.042323">Somma et al., 2002</a>; 
+             <a = href = "https://journals.aps.org/pra/pdf/10.1103/PhysRevA.61.022301">Terhal and DiVincenzo, 2000</a>; 
+             <a = href = "https://journals.aps.org/pra/pdf/10.1103/PhysRevA.79.032316">Verstraete et al., 2009</a>; 
+             <a = href = "https://arxiv.org/pdf/quant-ph/9603028.pdf">Wiesner, 1996</a>; 
+             <a = href = "https://www.groundai.com/project/quantum-simulation/3">Zalka, 1998a,b</a>).</p>
             <p> Since any unitary operation can be written in terms of 
               universal quantum gates, it follows that in principle “anything” can be simulated, i.e. DQS is universal (Lloyd, 
               1996). However, it must be noted that not any unitary 
