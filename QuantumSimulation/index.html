@@ -151,24 +151,29 @@ The dashed arrows indicate the correspondence between the quantum states of the 
           <h6 style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">
           
           <p> Another approach to simulating quantum systems by
-            quantum mechanical means is analog quantum simulation (AQS), in which one quantum system mimics (emulates) another (see, e.g., (Fischer and Sch¨utzhold, 2004;
-            Manousakis, 2002; Porras and Cirac, 2004b; Smirnov
-            et al., 2007; Wei and Xue, 1997; Zagoskin et al., 2007)).
+            quantum mechanical means is <b> analog quantum simulation (AQS)</b>, in which one quantum system mimics (emulates) another (see, e.g., (
+            <a = href = "https://www.researchgate.net/publication/1944573_Quantum_simulation_of_cosmic_inflation_in_two-component_Bose-Einstein_condensates">Fischer and Sch¨utzhold, 2004</a> ;
+            <a = href = "http://www.stratos.fsu.edu/papers/pdf/JLTP126-1.pdf">Manousakis, 2002</a>; 
+            <a = href = "https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.92.207901">Porras and Cirac, 2004b</a>; 
+            <a = href = "https://iopscience.iop.org/article/10.1209/0295-5075/80/67008/pdf">Smirnovet al., 2007</a>; 
+            <a = href = "https://cds.cern.ch/record/321348/files/9702050.pdf">Wei and Xue, 1997</a>; 
+            <a = href = "https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.98.120503">Zagoskin et al., 2007</a>)).
             The Hamiltonian of the system to be simulated, Hsys, is
             directly mapped onto the Hamiltonian of the simulator,
             Hsim, which can be controlled at least to some extent:</p>
-          <p>H_{sys} ←→ H_{sim}. </p>
+          <p><img src="http://latex.codecogs.com/gif.latex?H_{sys}\leftrightarrow H_{sim}" alt="$H_{sys}\leftrightarrow H_{sim}$">. </p>
           <p>
-            This can be done if there is a mapping between the system and the simulator (Somaroo et al., 1999). Then
-            |φ(0)i can be mapped to |ψ(0)i via an operator f
-            [|ψ(0)i = f |φ(0)i], and |ψ(t)i can be mapped back to
-            |φ(t)i via f
-            −1
-            . For Hamiltonians Hsim = fHsysf
-            −1
-            .
-            Note that the simulator may only partly reproduce the
-            dynamics of the system. The choice of the mapping depends on what needs to be simulated and on the capabilities of the simulator. In AQS one is usually emulating
+            This can be done if there is a mapping between the system and the simulator (
+            <a = href = "https://arxiv.org/abs/quant-ph/9905045">Somaroo et al., 1999</a>
+             ). Then
+            <img src="http://latex.codecogs.com/gif.latex?{\vert\Phi (0) \rangle}" alt="${\vert\Phi (0) \rangle}$"> can be mapped to 
+            <img src="http://latex.codecogs.com/gif.latex?{\vert\Psi (0) \rangle}" alt="${\vert\Psi (0) \rangle}$"> via an operator 
+            <img src="http://latex.codecogs.com/gif.latex?|\textit{f}[ |\psi(0)\rangle = \textit{f}|\phi(0)\rangle]" alt="$|\textit{f}[ |\psi(0)\rangle = \textit{f}|\phi(0)\rangle]$">, and |ψ(t)i can be mapped back to
+            <img src="http://latex.codecogs.com/gif.latex?{\vert\Phi (t) \rangle}" alt="${\vert\Phi (t) \rangle}$"> via 
+            <img src="http://latex.codecogs.com/gif.latex?|\textit{f}^{-1}" alt="$|\textit{f}^{-1}$">. For Hamiltonians 
+            <img src="http://latex.codecogs.com/gif.latex?H_{sim} = \textit{f}H_{sys}\textit{f}^{-1}" alt="$H_{sim} = \textit{f}H_{sys}\textit{f}^{-1}$">.
+            Note that the simulator may only partly reproduce the dynamics of the system. 
+            The choice of the mapping depends on what needs to be simulated and on the capabilities of the simulator. In AQS one is usually emulating
             an effective many-body model of the simulated system.
             A controllable “toy-model” of the system is used to reproduce the property of interest, e.g. the dynamics or
             ground state. </p>
