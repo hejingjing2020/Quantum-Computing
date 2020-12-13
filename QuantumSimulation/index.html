@@ -97,17 +97,111 @@ The dashed arrows indicate the correspondence between the quantum states of the 
           
           <h2 style="font-size:3vw; color:black" align="center">A. Digital Quantum Simulation (DQS)</h2>
           <h6 style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">
+          <p> We consider the well-known circuit model for quantum computation (Nielsen and Chuang, 2000). First, the wavefunction 
+            |φi has to be encoded using the computational basis, i.e., as a superposition of binary bit strings. A very simple example is the simulation of 
+            spin-1/2 particles. Each particle is represented by a qubit: the spin-up state 
+            |↑i is encoded as the qubit state 
+            |1i, and the spindown state 
+            |↓i as 
+            |0i. For example, the three-spin state
+            |φi = |↑↑↓i is represented in the simulator by 
+            |ψi = |110i. </p>
             
+           <p>In order to obtain 
+             |ψ(t)i = exp{−i~Ht} |ψ(0)i, 
+             U = exp{−i~Ht} must be applied to the initial state. The complicated many-qubit unitary 
+             transformation U is implemented through the application of a sequence of single- and two-qubit gates 
+             (we will come back and discuss the decomposition of U into these simple gates shortly). Such a circuit-based quantum simulation recreating the evolution 
+             |ψ(0)i → |ψ(t)i is usually referred to as digital quantum simulation (DQS). 
+             Some of the representative studies on DQS are (Abrams and Lloyd, 1997; Lidar and Biham, 1997; Lloyd, 1996; Marzuoli and Rasetti, 2002; 
+             Ortiz et al., 2001; Raeisi et al., 2012; 
+             Somma et al., 2002; Terhal and DiVincenzo, 2000; Verstraete et al., 2009; Wiesner, 1996; Zalka, 1998a,b).</p>
+            <p> Since any unitary operation can be written in terms of 
+              universal quantum gates, it follows that in principle “anything” can be simulated, i.e. DQS is universal (Lloyd, 
+              1996). However, it must be noted that not any unitary 
+              operation can be efficiently simulated (that is with polynomial resources) and, therefore, there are Hamiltonians 
+              that cannot be efficiently simulated in this way. Nevertheless, it is possible to efficiently simulate any finitedimensional local Hamiltonian. This is particularly important since all local spin systems, and all Hamiltonians 
+              that can be efficiently mapped to such systems, are included in this class. In other words, although not all 
+              mathematically allowed Hamiltonians can be simulated 
+              efficiently, those that appear in most physical theories 
+              can be simulated efficiently. Note that finding an efficient 
+              decomposition in terms of universal gates can in itself be 
+              a difficult problem (Daskin and Kais, 2011). Furthermore, it must be stressed that the implemented unitary 
+              operation (i.e. that obtained from the decomposition into 
+              single- and two-qubit gates) is generally an approximation of the desired unitary evolution. In principle, this 
+              approximation can be made arbitrarily accurate (by refining the decomposition), but this comes at the cost of 
+              an ever-increasing number of gates. </p>
+
         </h6>
 
           <h2 style="font-size:3vw; color:black" align="center">B. Anolog Quantum Simulation (AQS)</h2>
           <h6 style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">
           </h6>
+          <p> Another approach to simulating quantum systems by
+            quantum mechanical means is analog quantum simulation (AQS), in which one quantum system mimics (emulates) another (see, e.g., (Fischer and Sch¨utzhold, 2004;
+            Manousakis, 2002; Porras and Cirac, 2004b; Smirnov
+            et al., 2007; Wei and Xue, 1997; Zagoskin et al., 2007)).
+            The Hamiltonian of the system to be simulated, Hsys, is
+            directly mapped onto the Hamiltonian of the simulator,
+            Hsim, which can be controlled at least to some extent:</p>
+          <p>H_{sys} ←→ H_{sim}. </p>
+            This can be done if there is a mapping between the system and the simulator (Somaroo et al., 1999). Then
+            |φ(0)i can be mapped to |ψ(0)i via an operator f
+            [|ψ(0)i = f |φ(0)i], and |ψ(t)i can be mapped back to
+            |φ(t)i via f
+            −1
+            . For Hamiltonians Hsim = fHsysf
+            −1
+            .
+            Note that the simulator may only partly reproduce the
+            dynamics of the system. The choice of the mapping depends on what needs to be simulated and on the capabilities of the simulator. In AQS one is usually emulating
+            an effective many-body model of the simulated system.
+            A controllable “toy-model” of the system is used to reproduce the property of interest, e.g. the dynamics or
+            ground state. </p>
+          <p>
+            An important advantage of AQS is that it could be
+            useful even in the presence of errors, up to a certain tolerance level. For example, one is sometimes interested in
+            knowing whether a certain set of physical conditions leads
+            to a given quantum phase transition. Even without having the full quantitative details, a qualitative answer can
+            be quite valuable in this context. If the quantum simulator suffers from uncertainties in the control parameters,
+            the phase transition under study could still be observed,
+                        hence providing the answer to the question of interest. </p>
+            Finding the mapping in an AQS might, at first glance,
+            look simpler than obtaining the most efficient gate decomposition for a given Hamiltonian in DQS. Sometimes
+            the mapping is indeed straightforward, but this is not
+            always the case, and quite often clever mappings have
+            to be devised, sometimes involving additional externally
+            applied fields or ancillary systems to mediate various interactions.</p>
           
          </h6>
 
           <h2 style="font-size:3vw; color:black" align="center">C. Quantum-information-inspired Alogrithms for the Classical Simulation of Quantum Systems</h2>
           <h6 style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">
+            
+          <p> In an interesting recent development, classical numerical algorithms for the simulation of quantum many-body
+              systems came out of research on quantum information
+              theory (For detailed studies on the subject, see e.g. (Verstraete and Cirac, 2004; Verstraete et al., 2004; Vidal,
+            2008)).</p>
+            <p>
+              As discussed in the previous sections, fully characterizing a quantum system requires an exponentially large
+              number of parameters. It would be very useful if manyparticle states could be represented in such a way that
+              some physical quantities could be classically calculated in
+              a more efficient way. In order to achieve this goal, some
+              techniques from quantum information theory have been
+              used in recently developed algorithms. The first steps
+              in this direction were taken in (Verstraete and Cirac,
+              2004; Verstraete et al., 2004) and thereafter a significant
+              effort has been made to explore this idea. Using matrix product states (MPS) and projected entangled-pair
+              states (PEPS) one can simulate more efficiently infinitesize quantum lattice systems in one and two dimensions.
+              This new class of algorithms makes it possible to simulate spin systems for longer times, and to study physical phenomena which would have been inaccessible with
+              previous methods. Moreover, these methods can be combined with Monte Carlo techniques. For more details
+              we direct the reader to the two reviews (Cirac and Verstraete, 2009; Verstraete et al., 2008) and the references
+              therein. Another widely used stochastic method is the
+              Metropolis algorithm. Its quantum version allows for the
+              direct sampling from the eigenstates of the Hamiltonian,
+              overcoming in this way the sign problem (Temme et al.,
+              2011).</p>
+ 
           </h6>
           
         </article>
