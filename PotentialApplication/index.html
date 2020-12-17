@@ -43,15 +43,15 @@
         <article class="user_reviews">     
         <p align="center">
 <h2 align="center" style="font-size:3vw; color:black">QUANTUM ANNEALING</h2>
-<h3 align="center" style="font-size:3vw; color:black" >Introduction</h3>
+<h3 align="center" style="font-size:2.6vw; color:black" >Introduction</h3>
 <p style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">Quantum annealing (QA) is a metaheuristic for finding the global minimum of a given objective function over a given set of candidate solutions, by a process using quantum fluctuations.</p>
-<h3 align="center" style="font-size:3vw; color:black">Basic Idea: Annealing</h3>
+<h3 align="center" style="font-size:2.6vw; color:black">Basic Idea: Annealing</h3>
 <p style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">In metallurgy and materials science, annealing is a heat treatment that alters the physical and sometimes chemical properties of a material to increase its ductility and reduce its hardness, making it more workable. Basic underlying mechanism is that by giving material a bit higher energy level, it can get rid of being trapped in potential wells, and when its energy naturally drops, it can, by fundamental axioms of thermodynamics, obtains low-energy state, which is the most stable state giving material better performance.</p>
 <p style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">As the techinique&#39;s originally invented area, metallurgy widely adapts such technology. Also, other areas of science and tech nology involves this processing pattern in their study. For example, in PCR procedure that copying DNA sequences, similar techinique is used to maximize DNA recopmbination. </p>
 <p align="center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GnCaCXNTNgw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" align="center"></iframe> 
 </p>
-<h3 align="center" style="font-size:3vw; color:black">Intuition</h3>
+<h3 align="center" style="font-size:2.6vw; color:black">Intuition</h3>
 <p style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">An optimization problem is a problem to minimize or maximize a single valued function of multiple variables.  Roughly speaking, optimization problem can be divided into two groups, &quot;easy&quot; and &quot;hard&quot; ones.  Easy ones are those for which an algorithm of complexity $O(n) = n^p$, i.e. a solution of polynomial complexity. </p>
 <div contenteditable="false" spellcheck="false" class="mathjax-block md-end-block md-math-block md-rawblock" id="mathjax-n10" cid="n10" mdtype="math_block">
 			
@@ -60,9 +60,9 @@
 					</div></div>
 <p style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">While the &quot;hard&quot; problem domain does not acquire such solution. Well-known examples of such problems include traveling salesman problem(TSP). Finding an exact answer for these problems takes exponential time with any existing algorithms. For such problems, it is literally impossible to find its exact solution if the problem set exceeds a moderate size. </p>
 <p style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">It is therefore important practically to devise algorithms which give approximate but optimized solutions effectively. Many instances of problems are developed with such approximate algorithms. For example, Lin-Kernighan algorithm can be applied for solving TSP problem within an acceptable time (i.e., polynomial).  </p>
-<h3 align="center" style="font-size:3vw; color:black">Algorithms</h3>
+<h3 align="center" style="font-size:2.6vw; color:black">Algorithms</h3>
 <p style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">Two generic algorithms are to be under discussion SA, and RA.</p>
-<h4 align="center" style="font-size:3vw; color:black">Simulated Annealing (SA)</h4>
+<h4 align="center" style="font-size:2.2vw; color:black">Simulated Annealing (SA)</h4>
 <p style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">In SA, the cost function relating to energy of a statistical-mechanical system is to be minimized. The system is then given a temperature, an artificially introduced control parameter, which, by reducing slowly from a high value to zero, the system&#39;s state is to be set to the lowest value of "cost function", reaching one solution of the optimization problem. The idea is that the system is expected to stay close to thermal equilibrium during time evolution if the rate of decrease in temperature is sufficiently slow, and is thus convergent to the equilibrium state of the system. In practical applications SA is immensely popular due to its general applicability, reasonable performance, and relatively easy implementation in most cases. SA is usually used as a method to obtain an approximate solution within a finite computation time.</p>
 <p style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">SA procedures can be described as:</p>
 <ol>
@@ -73,12 +73,12 @@
 
 </ol>
 <p align = "center"><img src="images/demo/Flowchart-for-the-simulated-annealing-algorithm.png"alt="picofSA" style="width:60%"></p>
-<h4 align="center" style="font-size:3vw; color:black">Quantum Annealing</h4>
+<h4 align="center" style="font-size:2.2vw; color:black">Quantum Annealing</h4>
 <p align="center">
  <iframe width="560" height="315" src="https://www.youtube.com/embed/UV_RlCAc5Zs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
  </p>
 <p style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">In QA, artificial degrees of freedom of quantum nature are introduced. With non-commutative operators, which induce quantum fluctuationsThe strength of quantum fluctuations can be controlled. Generally, instead of creating artificial fluctuations with different amplitude to simulate annealing process, quantum properties of qubits are applied, that qubits wave function is likely to converge, just like SA in which slowly reduce of  the temperature is done. More precisely, the strength of quantum fluctuations is first set to a very large value for the system to search for the global structure of the phase space, corresponding to the high- temperature situation in SA. Then the strength is gradually decreased to finally vanish to recover the original system hopefully in the lowest-energy state. Quantum tunneling between different classical states replaces thermal hopping in SA. The physical idea behind such a procedure is to keep the system close to the instantaneous ground state of the quantum system, analogously to the quasiequilibrium state to be kept during the time evolution of SA. Similarly to SA, QA is a generic algorithm applicable, in principle, to any combinatorial optimization problem and is used as a method to reach an approximate solution within a given finite amount of time.</p>
-<h3 align="center" style="font-size:3vw; color:black" >Commercial Annealing Machine: Dwave</h3>
+<h3 align="center" style="font-size:2.6vw; color:black" >Commercial Annealing Machine: Dwave</h3>
 <p style="font-size:1.8vw;line-height: 1.5; color:black; font-family:verdana; font-style: normal">Dwave is the only commercial quantum annealing machine in the world. Literally, it cannot be referred as a general purpose computer since it is dedicated for limited range of tasks, and there are no logic gates within this kind of machine, since the computing is based on adiabatic quantum calculation. Each qubit is constructed by Ising Model by</p>
 <div contenteditable="false" spellcheck="false" class="mathjax-block md-end-block md-math-block md-rawblock" id="mathjax-n96" cid="n96" mdtype="math_block">
 			
